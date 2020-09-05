@@ -1,0 +1,109 @@
+BootStrap
+
+install bootstrap using npm -- npm install bootstrap
+
+or we can simply use bootstrap CDN which allows to import bootstrap libraries in the head.
+
+When we include bootstrap in the worspace through CDN / npm , The default Bootstrap typography sets the font to Helvetica Neue and selects the appropriate font size based on the choice of the heading style and paragraph style for the content.
+
+Responsive Design - users access websites with various devices with various screen resolutions. To render the webpage respective to that scenario, we use bootstrap. We must adapt to the users 'viewport'. 
+
+Mobile first - First we must satisfy the mobile constraints. 
+
+Grid System -- Bootstrap Grid System
+Fluid Images
+Media Queries
+
+--- BootStrap Grid System --- it is designed to be responsive, mobile first and fluid.
+
+ViewPort meta tag - <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+
+This viewport tag ensures that the screen width is set to the device width and the content is rendered with this width in mind.
+
+
+
+
+CSS Flexbox Layout; -- Bootstrap uses this for its grid system.
+
+Bootstrap grid works by applying the "container" class to the outermost div/layer. 
+<div class="container"> -- this container allows the fixed width to allow expansion relative to the size of the screen.
+<div class="container-fluid"> -- 
+
+Inside the container, the content is laid out in the form of row
+<div class="container">
+	<div class="row">
+
+	</div>
+</div>  
+
+Here the content is divided into multiple rows and then divided content is laid out as columns. The row that is generated will have 12 equal sized columns.
+we can design the content to occupy any no. of the columns.
+
+
+The bootstrap grids make 5 classes available to use.
+
+default - extra small to extra large
+sm - small
+md - medium
+lg - large
+xl - extra large
+
+
+we use the classes .col-*, .col-sm-*, .col-md-*, .col-lg-* for defining the layouts for various screen sizes.
+
+Vertical Alignment -- 
+
+<div class="row align-items-center"> -- The content is aligned based on the data that occupies the maximum height in the row.
+
+Horizontal Alignment --
+
+<div class="row justify-content-center"> --  the content is centered.
+
+Column Offsets --  
+
+offset-sm-1 - It is right shifted by 1 column.
+
+Few Tags in the BootStrap Library that can be used in styling HTML elements.
+
+container -- This is the principal tag this is required to style elements using bootstrap. Creates a literal container around the element lansdscape.
+jumbotron -- used for headers in the webpage. creates a jumbo header for the header elements
+<div class="col-12 col-sm-6"> -- This essentially means that inside the row, 12 columns are created as per understanding. the first col-12 corresponds to 
+								 allocating all 12 columns of the row to the elements defined inside that div in xs devices and the next col-sm-6 corresponds to allocating 6 columns of the content enclosed by the said div tag for sm to xl devices. The order is xs, sm, md,lg,xl
+align-items-center -- This ensures that all the elements in that enclosing div are aligned to the center
+
+<div class="col-4 offset-1 col-sm-2"> -- The elements all are defined as the same. The offset-1 property ensures that one column spacing is given before the 										  rest of the content is rendered.
+list-unstyled -- This element is used in lists. This ensures that the bullet points or numeric points created with <ul> and <ol> tags are removed.
+align-self-center - The align-items property applies to all flex containers, and sets the default alignment of the flex items along the cross axis of each 						flex line. The align-self applies to all flex items, allows this default alignment to be overridden for individual flex items.
+
+
+
+--------------------------------NAVIGATION AND NAVBAR-------------------------------------------
+
+Components provided by bootstrap to include the navbar functionality are navbar and breadccrumbs
+
+<nav class="navbar navbar-dark navbar-expand-sm bg-primary fixed-top">   
+	This will essentially create a navbar in the body tag of the html page. navbar is a class which allows us to create a navbar. 
+																			navbar-dark = a dark theme for navbar
+																			navbar-expand-sm = observed while checking responsiveness
+																			bg-primary = allots primary color defined in bs4 libraries -> blue in reality
+																			fixed-top = allows us to fix the navbar at top. 
+<a class="navbar-brand"></a> -- THis is used to store the logo																			
+
+<a class="navbar-brand mr-auto" href="./index.html">Ristorante Con Fusion</a>  -- navbar-brand class allows us to define the brand name of the		
+																				  the website. This usually consists of the brand logo that can be used to
+																				  direct the users to the home page of the application.
+
+<div class="collapse navbar-collapse" id='Navbar'>
+                <ul class="navbar-nav mr-auto list-unstyled">
+                    <li class="nav-item active"><a href="./index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </div>																				  
+
+In the above description, the navbar-collapse allows us to create a collapsible navbar for lower end devices.
+The ul is used to create the contents in the navbar. The navbar-nav helps us define the navigable elements of the header.
+The nav-item class allows us to define the INDIVIDUAL ITEM/MENU of the navbar.
+The active in the nav-item allows us to highlight the menu we are supposedly on
+The nav-link enables us to establish that this is a link that can be used to navigate around			
