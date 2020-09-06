@@ -94,9 +94,9 @@ Components provided by bootstrap to include the navbar functionality are navbar 
 																				  direct the users to the home page of the application.
 
 <div class="collapse navbar-collapse" id='Navbar'>
-                <ul class="navbar-nav mr-auto list-unstyled">
+                <ul class="navbar-nav mr-auto list-unstyled">s
                     <li class="nav-item active"><a href="./index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-lsink">About</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Menu</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
                 </ul>
@@ -106,4 +106,4 @@ In the above description, the navbar-collapse allows us to create a collapsible 
 The ul is used to create the contents in the navbar. The navbar-nav helps us define the navigable elements of the header.
 The nav-item class allows us to define the INDIVIDUAL ITEM/MENU of the navbar.
 The active in the nav-item allows us to highlight the menu we are supposedly on
-The nav-link enables us to establish that this is a link that can be used to navigate around			
+The nav-link enables us to establish that this is a link that can be used to navigate around.			
