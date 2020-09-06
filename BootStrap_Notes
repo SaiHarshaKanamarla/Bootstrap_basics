@@ -94,7 +94,7 @@ Components provided by bootstrap to include the navbar functionality are navbar 
 																				  direct the users to the home page of the application.
 
 <div class="collapse navbar-collapse" id='Navbar'>
-                <ul class="navbar-nav mr-auto list-unstyled">s
+                <ul class="navbar-nav mr-auto list-unstyled">
                     <li class="nav-item active"><a href="./index.html" class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="about.html" class="nav-lsink">About</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Menu</a></li>
@@ -108,7 +108,7 @@ The nav-item class allows us to define the INDIVIDUAL ITEM/MENU of the navbar.
 The active in the nav-item allows us to highlight the menu we are supposedly on
 The nav-link enables us to establish that this is a link that can be used to navigate around.			
 
-ICON FONTS
+----------------------------------ICON FONTS-------------------------------------------
 
 These are a set of symbols and glyphs. They can be used and styled like regular fonts.
 they are a lightweight replacement for simple graphics.
@@ -133,3 +133,27 @@ Eg, <span class="fa fa-home">Home</span>
 To add the social media links in the webpage we need to use to both font-awesome fa and bootstrap social
 
 	<a class="btn btn-social-icon btn-google" href="http://google.com/+"><span class="fa fa-google-plus"></span></a>
+
+
+------------------------------------------USER INPUT : BUTTONS AND FONTS---------------------------------------------------
+
+<div class="btn-group" role="group">
+                    <a role="button" class="btn btn-primary" href="tel:+4186431516"><span class="fa fa-phone"> Call</span></a> <!-- btn primary creates a dark blue button -->
+                    <a role="button" class="btn btn-info"><span class="fa fa-skype"> Skype</span></a> <!-- btn-info creates a light blue color button-->
+                    <a role="button" class="btn btn-success" href="mailto:harsha.sai018@gmail.com"><span class="fa fa-envelope"> Email</span></a> <!-- btn-success creates a light green color button-->
+                </div>
+
+In the given piece of code...we added button with bootstrap styling. Here, the 
+
+btn-group -- is a bootstrap class that helps us define buttons as a group.
+btn - adds basic styling to the button
+btn-primary - makes the button dark blue
+btn-info - makes the button light blue
+btn-sucess - makes the button green
+
+
+For further reference, use this link ""https://www.w3schools.com/bootstrap/bootstrap_ref_css_buttons.asp""
+
+
+
+
