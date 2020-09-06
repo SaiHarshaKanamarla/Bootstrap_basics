@@ -154,8 +154,48 @@ btn-sucess - makes the button green
 
 For further reference, use this link ""https://www.w3schools.com/bootstrap/bootstrap_ref_css_buttons.asp""
 
+<form>
+<div class="form-group row">
+                        <label for="firstname" class="col-md-2 col-form-label">FirstName</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter your First Name">
+                        </div>
+                    </div>
+
+In the above code snippet , we are creating a single element for a form. We enclose all such tags within a <form> </form> tags.
+The class form-group allows us to create various form elements that are grouped together in the form.
+<label> is the standard html tag that helps us create a label for a text
+and then, we define the entire text within a form-group classin conjunction with row, => a single row will have label and input
+
+We can create a myriad of input tags with this technique.
 
 
 
+----------------------------------------BOOTSTRAP TABLES--------------------------------------
 
+BootStrap Card - This is a component that allows us to highlight content in myriad ways.
 
+ <div class="row row-content">
+        <div class="col-12 col-sm-9">
+            <h2> Facts & Figures </h2>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead class="thead-dark">
+
+In the above code-snippet, we add the row and row-content classes to align the content in the parent container properly
+the class table-responsive ensure we have a responsive design when we scale the website
+class="table table-striped" -- the bootstrap table class overrides the basic table functionality and table-striped allows us to create a table with a striped design
+thead-dark -- this enables the header of the table to be dark
+
+<div class="col-12 col-sm-6">
+                <div class="card">
+                    <h3 class="card-header bg-primary text-white">Facts At a Glance</h3>
+                    <div class="card-body">
+                        <dl class="row">
+
+Above is the code snippet for card. class=card allows us to create a card in the body
+the card-header defines the bootstrap header for the card. bg-primary set a blue color to the head element.
+bg-primary is predefined with white.
+card-body enables us to define the content of the card within.
+
+Here, we use the dl and dt tags --> description list, description terms..Just a way of formatting that data.
