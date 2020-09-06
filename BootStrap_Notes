@@ -107,3 +107,29 @@ The ul is used to create the contents in the navbar. The navbar-nav helps us def
 The nav-item class allows us to define the INDIVIDUAL ITEM/MENU of the navbar.
 The active in the nav-item allows us to highlight the menu we are supposedly on
 The nav-link enables us to establish that this is a link that can be used to navigate around.			
+
+ICON FONTS
+
+These are a set of symbols and glyphs. They can be used and styled like regular fonts.
+they are a lightweight replacement for simple graphics.
+
+Font-Awesome - It is a package we use to introduce fonts to the webpage
+
+They can be utilized as <i class="fa fa-phone"></i>
+If we want to include various social options, we can make use of bootstrap-social.css in the project.
+
+To install the ICON FONTS feature in the webpage.. we must install both font-awesome using npm install font-awesome 
+and then install bootstrap-social using npm as well.
+
+Then once, installed using npm, as expected a folder will be created in node_modules. Then we must import them into the head tag like this<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+ 
+ <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+ <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+
+To add an icon font in the webpage, we can use the font-awesome [fa] class in conjunction with span and fa-"predefined icon name"
+to include icons to the menus.
+Eg, <span class="fa fa-home">Home</span>
+
+To add the social media links in the webpage we need to use to both font-awesome fa and bootstrap social
+
+	<a class="btn btn-social-icon btn-google" href="http://google.com/+"><span class="fa fa-google-plus"></span></a>
