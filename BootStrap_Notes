@@ -207,3 +207,63 @@ we can use the bootstrap class img-fluid which allows the images to be responsiv
 shape of the images can be manipulated as well
 
 img-thumbnail - for thumbnail
+
+<img src="img/logo.png" class="img-fluid"> -- In this tag, the bootstrap class img-fluid is utilized to ensure responsive 
+											  nature for images in the webpage.
+
+<div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="./img/uthappizza.png" alt="Uthappiza">
+                    <div class="
+					">
+                        <h2>Uthappizza</h2>
+                        <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                    </div>
+                    
+                </div>
+
+For the above lines, media class sets media properties to the tags underneath. the mr-3 stands for margin right 3. 
+img-thumbnail class shapes the image to a thumbnail 
+For more references to image shapes refer https://www.w3schools.com/bootstrap/bootstrap_images.asp..
+
+https://www.w3schools.com/bootstrap4/bootstrap_media_objects.asp
+
+
+
+---------------------------------------------------ALERTING USERS------------------------
+
+Badges
+Alert/Error/Warning Messages
+Progress Bars 
+
+Usage of Badges in Web Design
+<span class="badge badge-danger">HOT </span> -- badge-danger creates a red-color badge
+<span class="badge badge-pill badge-secondary">$4.99</span> -- badge-pill creates a pill shaped badge and badge-secondary assigns secondary
+																color which is grey.
+
+
+
+
+Alerts: To create an Alert
+<div class="alert alert-warning alert-dismissable" role="alert"> </div>
+<button type="button" class="close" data-dismiss="alert">
+	<span> &times; </span>
+</button>
+
+This basically creates an alert. here "alert" class gives all the alert properties. alert-warning is the type of alert
+alert-dismissable ensures that we can dismiss / close the alert. For this to work, we also need to include the <button> tag which 
+enables us the button to close it.
+
+Template -- <div class="alert alert-*> </div>
+
+Progress Bars: To showcase the Progress of a task in the webpage
+
+<div class="progress">
+	<div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width:80%">
+	80%
+	</div>
+</div>
+
+Here the first div has the progress bar bootstrap class. The second div has the progress-bar bootstrap class which creates it.
+progress-bar-striped gives a striped designed progress bar
+bg-danger sets the color of the progress bar to red.
+
