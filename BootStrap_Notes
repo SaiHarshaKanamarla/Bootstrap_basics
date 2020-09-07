@@ -199,3 +199,11 @@ bg-primary is predefined with white.
 card-body enables us to define the content of the card within.
 
 Here, we use the dl and dt tags --> description list, description terms..Just a way of formatting that data.
+
+
+--------------------------------------IMAGES AND MEDIA-----------------------------------------------------
+
+we can use the bootstrap class img-fluid which allows the images to be responsive.
+shape of the images can be manipulated as well
+
+img-thumbnail - for thumbnail
